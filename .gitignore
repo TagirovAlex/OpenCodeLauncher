@@ -1,0 +1,27 @@
+## Артефакты сборки
+bin/
+obj/
+*.user
+*.pdb
+
+## Публикация
+publish/
+publish-latest/
+
+## Временные файлы и логи приложения
+temp/
+logs/
+*.bak
+*.log
+
+## Visual Studio
+.vs/
+*.suo
+*.userosscache
+
+## Редакторы / ОС
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
