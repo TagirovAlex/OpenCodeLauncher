@@ -1,6 +1,6 @@
 # OpenCodeLauncher
 
-<img src="opencode-logo-alstrive-512.jpg" alt="OpenCodeLauncher" width="200"/>
+<img src="opencode-logo-alstrive-512.jpg" alt="OpenCodeLauncher" width="50"/>
 
 Лаунчер для управления [OpenCode](https://opencode.ai) сервером на Windows: запуск сервера для выбранного проекта на выбранном сетевом интерфейсе (Tailscale / LAN / loopback), проверка доступности, профили запуска, мониторинг сессий и статистики.
 
