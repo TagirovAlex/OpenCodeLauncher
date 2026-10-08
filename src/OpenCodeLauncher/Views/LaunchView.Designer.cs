@@ -39,242 +39,243 @@ partial class LaunchView
 
     private void InitializeComponent()
     {
-        this.labelProject = new Label();
-        this.projectPathTextBox = new TextBox();
-        this.buttonBrowse = new Button();
-        this.labelFavorites = new Label();
-        this.comboBoxFavorites = new ComboBox();
-        this.buttonAddFavorite = new Button();
-        this.buttonRemoveFavorite = new Button();
-        this.labelInterface = new Label();
-        this.comboBoxInterface = new ComboBox();
-        this.labelPort = new Label();
-        this.portNumericUpDown = new NumericUpDown();
-        this.labelServerUsername = new Label();
-        this.serverUsernameTextBox = new TextBox();
-        this.labelServerPassword = new Label();
-        this.serverPasswordTextBox = new TextBox();
-        this.buttonStart = new Button();
-        this.buttonStop = new Button();
-        this.buttonOpen = new Button();
-        this.labelStatusCaption = new Label();
-        this.statusLabel = new Label();
-        this.logTextBox = new TextBox();
-        this.folderBrowserDialog = new FolderBrowserDialog();
-        this.SuspendLayout();
+        labelProject = new Label();
+        projectPathTextBox = new TextBox();
+        buttonBrowse = new Button();
+        labelFavorites = new Label();
+        comboBoxFavorites = new ComboBox();
+        buttonAddFavorite = new Button();
+        buttonRemoveFavorite = new Button();
+        labelInterface = new Label();
+        comboBoxInterface = new ComboBox();
+        labelPort = new Label();
+        portNumericUpDown = new NumericUpDown();
+        labelServerUsername = new Label();
+        serverUsernameTextBox = new TextBox();
+        labelServerPassword = new Label();
+        serverPasswordTextBox = new TextBox();
+        buttonStart = new Button();
+        buttonStop = new Button();
+        buttonOpen = new Button();
+        labelStatusCaption = new Label();
+        statusLabel = new Label();
+        logTextBox = new TextBox();
+        folderBrowserDialog = new FolderBrowserDialog();
+        ((System.ComponentModel.ISupportInitialize)portNumericUpDown).BeginInit();
+        SuspendLayout();
         // 
         // labelProject
         // 
-        this.labelProject.AutoSize = true;
-        this.labelProject.Location = new Point(12, 15);
-        this.labelProject.Name = "labelProject";
-        this.labelProject.Size = new Size(55, 15);
-        this.labelProject.TabIndex = 0;
-        this.labelProject.Text = "Проект";
+        labelProject.AutoSize = true;
+        labelProject.Location = new Point(12, 15);
+        labelProject.Name = "labelProject";
+        labelProject.Size = new Size(47, 15);
+        labelProject.TabIndex = 0;
+        labelProject.Text = "Проект";
         // 
         // projectPathTextBox
         // 
-        this.projectPathTextBox.Location = new Point(60, 12);
-        this.projectPathTextBox.Name = "projectPathTextBox";
-        this.projectPathTextBox.Size = new Size(500, 21);
-        this.projectPathTextBox.TabIndex = 1;
+        projectPathTextBox.Location = new Point(60, 12);
+        projectPathTextBox.Name = "projectPathTextBox";
+        projectPathTextBox.Size = new Size(500, 23);
+        projectPathTextBox.TabIndex = 1;
         // 
         // buttonBrowse
         // 
-        this.buttonBrowse.Location = new Point(565, 11);
-        this.buttonBrowse.Name = "buttonBrowse";
-        this.buttonBrowse.Size = new Size(75, 23);
-        this.buttonBrowse.TabIndex = 2;
-        this.buttonBrowse.Text = "Обзор…";
-        this.buttonBrowse.Click += new EventHandler(this.buttonBrowse_Click);
+        buttonBrowse.Location = new Point(565, 11);
+        buttonBrowse.Name = "buttonBrowse";
+        buttonBrowse.Size = new Size(75, 23);
+        buttonBrowse.TabIndex = 2;
+        buttonBrowse.Text = "Обзор…";
+        buttonBrowse.Click += buttonBrowse_Click;
         // 
         // labelFavorites
         // 
-        this.labelFavorites.AutoSize = true;
-        this.labelFavorites.Location = new Point(12, 45);
-        this.labelFavorites.Name = "labelFavorites";
-        this.labelFavorites.Size = new Size(70, 15);
-        this.labelFavorites.TabIndex = 3;
-        this.labelFavorites.Text = "Избранное";
+        labelFavorites.AutoSize = true;
+        labelFavorites.Location = new Point(12, 45);
+        labelFavorites.Name = "labelFavorites";
+        labelFavorites.Size = new Size(68, 15);
+        labelFavorites.TabIndex = 3;
+        labelFavorites.Text = "Избранное";
         // 
         // comboBoxFavorites
         // 
-        this.comboBoxFavorites.Location = new Point(90, 42);
-        this.comboBoxFavorites.Name = "comboBoxFavorites";
-        this.comboBoxFavorites.Size = new Size(380, 21);
-        this.comboBoxFavorites.TabIndex = 4;
-        this.comboBoxFavorites.SelectedIndexChanged += new EventHandler(this.comboBoxFavorites_SelectedIndexChanged);
+        comboBoxFavorites.Location = new Point(90, 42);
+        comboBoxFavorites.Name = "comboBoxFavorites";
+        comboBoxFavorites.Size = new Size(380, 23);
+        comboBoxFavorites.TabIndex = 4;
+        comboBoxFavorites.SelectedIndexChanged += comboBoxFavorites_SelectedIndexChanged;
         // 
         // buttonAddFavorite
         // 
-        this.buttonAddFavorite.Location = new Point(475, 41);
-        this.buttonAddFavorite.Name = "buttonAddFavorite";
-        this.buttonAddFavorite.Size = new Size(100, 23);
-        this.buttonAddFavorite.TabIndex = 5;
-        this.buttonAddFavorite.Text = "В избранное";
-        this.buttonAddFavorite.Click += new EventHandler(this.buttonAddFavorite_Click);
+        buttonAddFavorite.Location = new Point(475, 41);
+        buttonAddFavorite.Name = "buttonAddFavorite";
+        buttonAddFavorite.Size = new Size(100, 23);
+        buttonAddFavorite.TabIndex = 5;
+        buttonAddFavorite.Text = "В избранное";
+        buttonAddFavorite.Click += buttonAddFavorite_Click;
         // 
         // buttonRemoveFavorite
         // 
-        this.buttonRemoveFavorite.Location = new Point(580, 41);
-        this.buttonRemoveFavorite.Name = "buttonRemoveFavorite";
-        this.buttonRemoveFavorite.Size = new Size(120, 23);
-        this.buttonRemoveFavorite.TabIndex = 6;
-        this.buttonRemoveFavorite.Text = "Убрать из избранного";
-        this.buttonRemoveFavorite.Click += new EventHandler(this.buttonRemoveFavorite_Click);
+        buttonRemoveFavorite.Location = new Point(580, 41);
+        buttonRemoveFavorite.Name = "buttonRemoveFavorite";
+        buttonRemoveFavorite.Size = new Size(120, 23);
+        buttonRemoveFavorite.TabIndex = 6;
+        buttonRemoveFavorite.Text = "Убрать из избранного";
+        buttonRemoveFavorite.Click += buttonRemoveFavorite_Click;
         // 
         // labelInterface
         // 
-        this.labelInterface.AutoSize = true;
-        this.labelInterface.Location = new Point(12, 75);
-        this.labelInterface.Name = "labelInterface";
-        this.labelInterface.Size = new Size(115, 15);
-        this.labelInterface.TabIndex = 7;
-        this.labelInterface.Text = "Сетевой интерфейс";
+        labelInterface.AutoSize = true;
+        labelInterface.Location = new Point(12, 75);
+        labelInterface.Name = "labelInterface";
+        labelInterface.Size = new Size(115, 15);
+        labelInterface.TabIndex = 7;
+        labelInterface.Text = "Сетевой интерфейс";
         // 
         // comboBoxInterface
         // 
-        this.comboBoxInterface.Location = new Point(135, 72);
-        this.comboBoxInterface.Name = "comboBoxInterface";
-        this.comboBoxInterface.Size = new Size(250, 21);
-        this.comboBoxInterface.TabIndex = 8;
+        comboBoxInterface.Location = new Point(135, 72);
+        comboBoxInterface.Name = "comboBoxInterface";
+        comboBoxInterface.Size = new Size(250, 23);
+        comboBoxInterface.TabIndex = 8;
         // 
         // labelPort
         // 
-        this.labelPort.AutoSize = true;
-        this.labelPort.Location = new Point(400, 75);
-        this.labelPort.Name = "labelPort";
-        this.labelPort.Size = new Size(30, 15);
-        this.labelPort.TabIndex = 9;
-        this.labelPort.Text = "Порт";
+        labelPort.AutoSize = true;
+        labelPort.Location = new Point(400, 75);
+        labelPort.Name = "labelPort";
+        labelPort.Size = new Size(35, 15);
+        labelPort.TabIndex = 9;
+        labelPort.Text = "Порт";
         // 
         // portNumericUpDown
         // 
-        this.portNumericUpDown.Location = new Point(440, 72);
-        this.portNumericUpDown.Maximum = 65535;
-        this.portNumericUpDown.Minimum = 1;
-        this.portNumericUpDown.Name = "portNumericUpDown";
-        this.portNumericUpDown.Size = new Size(70, 21);
-        this.portNumericUpDown.TabIndex = 10;
-        this.portNumericUpDown.Value = 4000;
+        portNumericUpDown.Location = new Point(440, 72);
+        portNumericUpDown.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+        portNumericUpDown.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+        portNumericUpDown.Name = "portNumericUpDown";
+        portNumericUpDown.Size = new Size(70, 23);
+        portNumericUpDown.TabIndex = 10;
+        portNumericUpDown.Value = new decimal(new int[] { 4000, 0, 0, 0 });
         // 
         // labelServerUsername
         // 
-        this.labelServerUsername.AutoSize = true;
-        this.labelServerUsername.Location = new Point(12, 100);
-        this.labelServerUsername.Name = "labelServerUsername";
-        this.labelServerUsername.Size = new Size(43, 15);
-        this.labelServerUsername.TabIndex = 11;
-        this.labelServerUsername.Text = "Логин:";
+        labelServerUsername.AutoSize = true;
+        labelServerUsername.Location = new Point(12, 100);
+        labelServerUsername.Name = "labelServerUsername";
+        labelServerUsername.Size = new Size(44, 15);
+        labelServerUsername.TabIndex = 11;
+        labelServerUsername.Text = "Логин:";
         // 
         // serverUsernameTextBox
         // 
-        this.serverUsernameTextBox.Location = new Point(58, 97);
-        this.serverUsernameTextBox.Name = "serverUsernameTextBox";
-        this.serverUsernameTextBox.Size = new Size(140, 23);
-        this.serverUsernameTextBox.TabIndex = 12;
+        serverUsernameTextBox.Location = new Point(58, 97);
+        serverUsernameTextBox.Name = "serverUsernameTextBox";
+        serverUsernameTextBox.Size = new Size(140, 23);
+        serverUsernameTextBox.TabIndex = 12;
         // 
         // labelServerPassword
         // 
-        this.labelServerPassword.AutoSize = true;
-        this.labelServerPassword.Location = new Point(210, 100);
-        this.labelServerPassword.Name = "labelServerPassword";
-        this.labelServerPassword.Size = new Size(48, 15);
-        this.labelServerPassword.TabIndex = 13;
-        this.labelServerPassword.Text = "Пароль:";
+        labelServerPassword.AutoSize = true;
+        labelServerPassword.Location = new Point(204, 100);
+        labelServerPassword.Name = "labelServerPassword";
+        labelServerPassword.Size = new Size(52, 15);
+        labelServerPassword.TabIndex = 13;
+        labelServerPassword.Text = "Пароль:";
         // 
         // serverPasswordTextBox
         // 
-        this.serverPasswordTextBox.Location = new Point(261, 97);
-        this.serverPasswordTextBox.Name = "serverPasswordTextBox";
-        this.serverPasswordTextBox.Size = new Size(140, 23);
-        this.serverPasswordTextBox.TabIndex = 14;
-        this.serverPasswordTextBox.UseSystemPasswordChar = true;
+        serverPasswordTextBox.Location = new Point(261, 97);
+        serverPasswordTextBox.Name = "serverPasswordTextBox";
+        serverPasswordTextBox.Size = new Size(140, 23);
+        serverPasswordTextBox.TabIndex = 14;
+        serverPasswordTextBox.UseSystemPasswordChar = true;
         // 
         // buttonStart
         // 
-        this.buttonStart.Location = new Point(12, 128);
-        this.buttonStart.Name = "buttonStart";
-        this.buttonStart.Size = new Size(130, 25);
-        this.buttonStart.TabIndex = 11;
-        this.buttonStart.Text = "Запустить сервер";
-        this.buttonStart.Click += new EventHandler(this.buttonStart_Click);
+        buttonStart.Location = new Point(12, 128);
+        buttonStart.Name = "buttonStart";
+        buttonStart.Size = new Size(130, 25);
+        buttonStart.TabIndex = 11;
+        buttonStart.Text = "Запустить сервер";
+        buttonStart.Click += buttonStart_Click;
         // 
         // buttonStop
         // 
-        this.buttonStop.Enabled = false;
-        this.buttonStop.Location = new Point(147, 128);
-        this.buttonStop.Name = "buttonStop";
-        this.buttonStop.Size = new Size(100, 25);
-        this.buttonStop.TabIndex = 12;
-        this.buttonStop.Text = "Остановить";
-        this.buttonStop.Click += new EventHandler(this.buttonStop_Click);
+        buttonStop.Enabled = false;
+        buttonStop.Location = new Point(147, 128);
+        buttonStop.Name = "buttonStop";
+        buttonStop.Size = new Size(100, 25);
+        buttonStop.TabIndex = 12;
+        buttonStop.Text = "Остановить";
+        buttonStop.Click += buttonStop_Click;
         // 
         // buttonOpen
         // 
-        this.buttonOpen.Location = new Point(252, 128);
-        this.buttonOpen.Name = "buttonOpen";
-        this.buttonOpen.Size = new Size(150, 25);
-        this.buttonOpen.TabIndex = 13;
-        this.buttonOpen.Text = "Открыть в браузере";
-        this.buttonOpen.Click += new EventHandler(this.buttonOpen_Click);
+        buttonOpen.Location = new Point(252, 128);
+        buttonOpen.Name = "buttonOpen";
+        buttonOpen.Size = new Size(150, 25);
+        buttonOpen.TabIndex = 13;
+        buttonOpen.Text = "Открыть в браузере";
+        buttonOpen.Click += buttonOpen_Click;
         // 
         // labelStatusCaption
         // 
-        this.labelStatusCaption.AutoSize = true;
-        this.labelStatusCaption.Location = new Point(12, 160);
-        this.labelStatusCaption.Name = "labelStatusCaption";
-        this.labelStatusCaption.Size = new Size(45, 15);
-        this.labelStatusCaption.TabIndex = 14;
-        this.labelStatusCaption.Text = "Статус:";
+        labelStatusCaption.AutoSize = true;
+        labelStatusCaption.Location = new Point(12, 160);
+        labelStatusCaption.Name = "labelStatusCaption";
+        labelStatusCaption.Size = new Size(46, 15);
+        labelStatusCaption.TabIndex = 14;
+        labelStatusCaption.Text = "Статус:";
         // 
         // statusLabel
         // 
-        this.statusLabel.AutoSize = true;
-        this.statusLabel.Location = new Point(65, 160);
-        this.statusLabel.Name = "statusLabel";
-        this.statusLabel.Size = new Size(300, 15);
-        this.statusLabel.TabIndex = 15;
-        this.statusLabel.Text = "Остановлен";
+        statusLabel.AutoSize = true;
+        statusLabel.Location = new Point(65, 160);
+        statusLabel.Name = "statusLabel";
+        statusLabel.Size = new Size(73, 15);
+        statusLabel.TabIndex = 15;
+        statusLabel.Text = "Остановлен";
         // 
         // logTextBox
         // 
-        this.logTextBox.Location = new Point(12, 185);
-        this.logTextBox.Multiline = true;
-        this.logTextBox.Name = "logTextBox";
-        this.logTextBox.ReadOnly = true;
-        this.logTextBox.Size = new Size(752, 272);
-        this.logTextBox.TabIndex = 16;
+        logTextBox.Location = new Point(12, 185);
+        logTextBox.Multiline = true;
+        logTextBox.Name = "logTextBox";
+        logTextBox.ReadOnly = true;
+        logTextBox.Size = new Size(752, 272);
+        logTextBox.TabIndex = 16;
         // 
         // LaunchView
         // 
-        this.AutoScaleDimensions = new SizeF(7F, 15F);
-        this.AutoScaleMode = AutoScaleMode.Font;
-        this.Controls.Add(this.labelProject);
-        this.Controls.Add(this.projectPathTextBox);
-        this.Controls.Add(this.buttonBrowse);
-        this.Controls.Add(this.labelFavorites);
-        this.Controls.Add(this.comboBoxFavorites);
-        this.Controls.Add(this.buttonAddFavorite);
-        this.Controls.Add(this.buttonRemoveFavorite);
-        this.Controls.Add(this.labelInterface);
-        this.Controls.Add(this.comboBoxInterface);
-        this.Controls.Add(this.labelPort);
-        this.Controls.Add(this.portNumericUpDown);
-        this.Controls.Add(this.labelServerUsername);
-        this.Controls.Add(this.serverUsernameTextBox);
-        this.Controls.Add(this.labelServerPassword);
-        this.Controls.Add(this.serverPasswordTextBox);
-        this.Controls.Add(this.buttonStart);
-        this.Controls.Add(this.buttonStop);
-        this.Controls.Add(this.buttonOpen);
-        this.Controls.Add(this.labelStatusCaption);
-        this.Controls.Add(this.statusLabel);
-        this.Controls.Add(this.logTextBox);
-        this.Dock = DockStyle.Fill;
-        this.Name = "LaunchView";
-        this.Size = new Size(776, 473);
-        this.ResumeLayout(false);
-        this.PerformLayout();
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        Controls.Add(labelProject);
+        Controls.Add(projectPathTextBox);
+        Controls.Add(buttonBrowse);
+        Controls.Add(labelFavorites);
+        Controls.Add(comboBoxFavorites);
+        Controls.Add(buttonAddFavorite);
+        Controls.Add(buttonRemoveFavorite);
+        Controls.Add(labelInterface);
+        Controls.Add(comboBoxInterface);
+        Controls.Add(labelPort);
+        Controls.Add(portNumericUpDown);
+        Controls.Add(labelServerUsername);
+        Controls.Add(serverUsernameTextBox);
+        Controls.Add(labelServerPassword);
+        Controls.Add(serverPasswordTextBox);
+        Controls.Add(buttonStart);
+        Controls.Add(buttonStop);
+        Controls.Add(buttonOpen);
+        Controls.Add(labelStatusCaption);
+        Controls.Add(statusLabel);
+        Controls.Add(logTextBox);
+        Name = "LaunchView";
+        Size = new Size(1508, 804);
+        ((System.ComponentModel.ISupportInitialize)portNumericUpDown).EndInit();
+        ResumeLayout(false);
+        PerformLayout();
     }
 }

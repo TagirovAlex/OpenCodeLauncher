@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Content Include="opencode-logo-alstrive.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OpenCodeLauncher.Core\OpenCodeLauncher.Core.csproj" />
   </ItemGroup>
 
@@ -15,6 +19,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>opencode-logo-alstrive.ico</ApplicationIcon>
   </PropertyGroup>
 
 </Project>
